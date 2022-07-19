@@ -7,7 +7,7 @@
 }
 
 body {
-    ont-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
 
@@ -37,7 +37,6 @@ hr {
     color: #562EFF;
     font-size: 24px;
     margin-bottom: 25px;
-    margin-top: 10px;
 }
 
 .top-players {
@@ -108,7 +107,52 @@ hr {
 }
 
 /* courses style  */
+.hablu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.courses {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 10px 5px 40px #f3eeee;
+}
+
+.course {
+    padding: 5px;
+}
+
 .course-banner img {
     width: 224px;
     height: 107px;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-aothor {
+    color: #ED6B4F;
+}
+
+.duration {
+    color: #ED6B4F;
+    background-color: #FFE4E8;
+    padding: 4px 10px;
+    border-radius: 15px;
 }
