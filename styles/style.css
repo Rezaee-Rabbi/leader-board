@@ -156,3 +156,37 @@ hr {
     padding: 4px 10px;
     border-radius: 15px;
 }
+
+/* media quaries  */
+/* mobile device */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .hablu {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog,
+    .hablu {
+        flex-direction: column;
+
+    }
+
+}
+
+/* tablate device */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .hablu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
